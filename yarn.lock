@@ -4,7 +4,7 @@
 
 "@arkecosystem/pay@https://github.com/ArkEcosystem/pay":
   version "0.1.0"
-  resolved "https://github.com/ArkEcosystem/pay#6ca1e0981e66d46c6a01f98ef01e92d1ac59cc86"
+  resolved "https://github.com/ArkEcosystem/pay#4a20b5df99bbee6a43fa226ea096c86efe27d3ff"
   dependencies:
     axios "^0.18.0"
     emittery "^0.4.1"
