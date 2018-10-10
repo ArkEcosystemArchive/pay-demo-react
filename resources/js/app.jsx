@@ -59,7 +59,6 @@ class App extends React.Component {
         this.state.product = sample(this.state.products)
     })
 
-    await gateway.prepare()
     await gateway.start()
 
     await this.generateQRCode()
