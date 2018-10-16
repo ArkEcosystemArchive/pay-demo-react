@@ -108,7 +108,7 @@ class App extends React.Component {
   }
 
   scanLink () {
-    return `ark:${this.state.recipient}?amount=${this.state.amountCrypto}&vendor=${this.state.vendorField}`
+    return `ark:${this.state.recipient}?amount=${this.state.amountCrypto}&vendorField=${this.state.vendorField}`
   }
 
   changeMethod (value) {
