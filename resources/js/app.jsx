@@ -192,12 +192,16 @@ class App extends React.Component {
                   :
                     <div className="p-6">
                         <div className="flex flex-no-wrap">
-                            <div className="w-16 flex-none">
-                                <img src="images/time.png" className="time" />
-                            </div>
-                            <div className="w-4/5 flex-none">
+                            <div className="w-3/4 flex-none">
                                 <small className="block mb-2">Time to pay:</small>
-                                <span className="font-bold">{this.countdownLabel} <span className="waiting text-sm font-light">Waiting for transaction confirmation ...</span></span>
+                                <img src="images/time.png" className="time inline-block" />
+                                <span className="inline-block pl-3">
+                                    <span className="font-bold block">{this.countdownLabel()}</span>
+                                    <span><span className="waiting text-sm font-light">Waiting for transaction confirmation ...</span></span>
+                                </span>
+                            </div>
+                            <div className="w-1/4 flex-none pt-6">
+                                <a href={this.scanLink()} className="pay-button p-3 no-underline rounded float-right">Pay Now</a>
                             </div>
                         </div>
                     </div>}

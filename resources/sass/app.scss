@@ -35,6 +35,12 @@ button.grey {
 
 .time {
   -webkit-animation: rotation 2s infinite linear;
+  height: 38px;
+}
+
+.pay-button {
+  background-color: #eef0ff;
+  color: #465cff;
 }
 
 @-webkit-keyframes rotation {
