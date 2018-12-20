@@ -43,6 +43,14 @@ button.grey {
   color: #465cff;
 }
 
+.pay-button, .tab {
+  transition: 500ms;
+}
+
+.pay-button:hover, .tab:hover {
+  opacity: 0.8 !important;
+}
+
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);

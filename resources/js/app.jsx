@@ -121,10 +121,10 @@ class App extends React.Component {
   }
 
   render() {
-    let addressClassName = 'p-3 text-sm rounded-tl rounded-bl'
+    let addressClassName = 'tab p-3 text-sm rounded-tl rounded-bl'
     addressClassName += this.state.method === 'address' ? ' blue' : 'grey'
 
-    let qrcodeClassName = 'p-3 text-sm rounded-tr rounded-br'
+    let qrcodeClassName = 'tab p-3 text-sm rounded-tr rounded-br'
     qrcodeClassName += this.state.method === 'qrcode' ? ' blue' : 'grey'
 
     return (
@@ -202,7 +202,7 @@ class App extends React.Component {
                                 </span>
                             </div>
                             <div className="w-1/4 flex-none pt-6">
-                                <a href={this.scanLink()} className="pay-button p-3 no-underline rounded float-right">Pay Now</a>
+                                <a href={this.scanLink()} className="pay-button text-sm font-bold p-3 no-underline rounded float-right">Pay Now</a>
                             </div>
                         </div>
                     </div>}
