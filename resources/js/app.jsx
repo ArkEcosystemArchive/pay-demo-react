@@ -18,11 +18,15 @@ class App extends React.Component {
       vendorField: uuid(),
       product: null,
       products: [
-        'https://media1.tenor.com/images/3e6e34d6cb50d6a9555076d70d5b608c/tenor.gif?itemid=6041827',
-        'https://orig00.deviantart.net/9edf/f/2015/238/3/a/make_it_rain_llama_by_snowbacon-d97b1z8.gif',
-        'https://thumbs.gfycat.com/IncredibleInfantileCottonmouth-size_restricted.gif',
-        'https://i.imgur.com/Maj5zM2.gif',
-        'https://media.giphy.com/media/94EQmVHkveNck/giphy.gif'
+        'https://tenor.com/ESX7.gif',
+        'https://tenor.com/pbEP.gif',
+        'https://tenor.com/t94A.gif',
+        'https://tenor.com/ERLs.gif',
+        'https://media0.giphy.com/media/j1QQj6To9Pbxu/giphy.gif?cid=3640f6095c1b8d405542324563bce467',
+        'https://media.giphy.com/media/x33p3SDzDM1ji/giphy.gif',
+        'https://media.giphy.com/media/psNbEEYu2wqC4/giphy.gif',
+        'https://media2.giphy.com/media/HGETmieaLgcxy/giphy.gif?cid=3640f6095c1b9bcd6f4a757167497f51',
+        'https://media3.giphy.com/media/p1hRAmsUMaSmA/giphy.gif?cid=3640f6095c1b96d23262756f45616981',
       ],
       timeLeft: 0,
       timeMinutes: 0,
@@ -59,7 +63,6 @@ class App extends React.Component {
         this.state.product = sample(this.state.products)
     })
 
-    await gateway.prepare()
     await gateway.start()
 
     await this.generateQRCode()
