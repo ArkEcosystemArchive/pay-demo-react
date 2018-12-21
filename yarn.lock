@@ -4,7 +4,7 @@
 
 "@arkecosystem/pay@https://github.com/ArkEcosystem/pay":
   version "0.1.0"
-  resolved "https://github.com/ArkEcosystem/pay#fdad59fdb111b34e4cfbdea63b743e9219d3cb00"
+  resolved "https://github.com/ArkEcosystem/pay#bb4f3e26c76fb67708530ee4b65b7a7f0c1b227e"
   dependencies:
     axios "^0.18.0"
     bignumber.js "^8.0.1"
