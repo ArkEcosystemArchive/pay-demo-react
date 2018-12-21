@@ -108,7 +108,12 @@ class App extends React.Component {
   }
 
   countdownLabel () {
-    return `${this.state.timeMinutes}:${this.state.timeSeconds}`
+    const seconds = this.state.timeSeconds.toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false
+    })
+
+    return `${this.state.timeMinutes}:${seconds}`
   }
 
   scanLink () {
