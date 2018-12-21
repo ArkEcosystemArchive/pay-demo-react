@@ -3,8 +3,8 @@
 
 
 "@arkecosystem/pay@https://github.com/ArkEcosystem/pay":
-  version "0.1.1"
-  resolved "https://github.com/ArkEcosystem/pay#7ae51070e4be7920bc0cefc061de022b6c026f0e"
+  version "0.1.11"
+  resolved "https://github.com/ArkEcosystem/pay#b3af7bf0644027b0b94461a3af3c6c7d4c7a0a4d"
   dependencies:
     axios "^0.18.0"
     bignumber.js "^8.0.1"
