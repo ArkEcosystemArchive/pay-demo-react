@@ -63,6 +63,12 @@ class App extends React.Component {
         this.state.product = sample(this.state.products)
     })
 
+    gateway.peers([{
+      ip: 'dexplorer.ark.io',
+      port: 8443,
+      protocol: 'https',
+    }])
+
     await gateway.start()
 
     await this.generateQRCode()
