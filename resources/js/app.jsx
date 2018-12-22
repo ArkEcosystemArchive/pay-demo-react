@@ -112,7 +112,7 @@ class App extends React.Component {
 
       var timeLeft = this.state.timeLeft - 1
 
-      this.setState(state => ({
+      this.setState(timeLeft => ({
         timeLeft: timeLeft,
         timeMinutes: Math.floor(timeLeft / 60),
         timeSeconds: timeLeft % 60
