@@ -138,7 +138,12 @@ class App extends React.Component {
   }
 
   copyToClipboard (prop) {
-    console.log(this.state[prop])
+    let textField = document.createElement('textarea')
+    textField.innerText = this.state[prop]
+    document.body.appendChild(textField)
+    textField.select()
+    document.execCommand('copy')
+    textField.remove()
   }
 
   render() {
