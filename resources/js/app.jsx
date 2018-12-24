@@ -137,15 +137,23 @@ class App extends React.Component {
     this.state.method = value
   }
 
-  copyToClipboard (prop) {
+  copyToClipboard (prop, e) {
     let textField = document.createElement('textarea')
     textField.innerText = this.state[prop]
     document.body.appendChild(textField)
     textField.select()
     document.execCommand('copy')
     textField.remove()
+    this.animateCopy(e)
   }
 
+  animateCopy(e) {
+    const element = e.target.parentElement
+    if (!element.classList.contains('bounce')) {
+        element.classList.add('bounce')
+    }
+    setTimeout(() => { element.classList.remove('bounce') }, 1000)
+}
   render() {
     let addressClassName = 'tab p-3 text-sm rounded-tl rounded-bl'
     addressClassName += this.state.method === 'address' ? ' blue' : 'grey'
@@ -180,7 +188,7 @@ class App extends React.Component {
                                 <small className="block mb-2">ARK Address</small>
                                 <span className="font-bold">
                                     {this.state.recipient}
-                                    <a href="#" className="clipboard float-right"><img onClick={this.copyToClipboard.bind(this, 'recipient')} src="images/clipboard.png" /></a>
+                                    <a href="#" className="clipboard float-right animated"><img onClick={this.copyToClipboard.bind(this, 'recipient')} src="images/clipboard.png" /></a>
                                 </span>
                             </div>
 
@@ -188,7 +196,7 @@ class App extends React.Component {
                                 <small className="block mb-2">Vendor Field</small>
                                 <span className="font-bold">
                                     {this.state.vendorField}
-                                    <a href="#" className="clipboard float-right"><img onClick={this.copyToClipboard.bind(this, 'vendorField')} src="images/clipboard.png" /></a>
+                                    <a href="#" className="clipboard float-right animated"><img onClick={this.copyToClipboard.bind(this, 'vendorField')} src="images/clipboard.png" /></a>
                                 </span>
                             </div>
 
@@ -198,7 +206,7 @@ class App extends React.Component {
                                     <span className="currency font-hairline rounded text-sm mr-2 px-2 py-1">DѦ</span>
                                     {this.state.amountCrypto}
                                     <span className="fiat font-normal">/ ${this.state.amount}</span>
-                                    <a href="#" className="clipboard float-right"><img onClick={this.copyToClipboard.bind(this, 'amountCrypto')} src="images/clipboard.png" /></a>
+                                    <a href="#" className="clipboard float-right animated"><img onClick={this.copyToClipboard.bind(this, 'amountCrypto')} src="images/clipboard.png" /></a>
                                 </span>
                             </div>
                         </div>
