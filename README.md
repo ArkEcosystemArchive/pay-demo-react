@@ -6,6 +6,8 @@
 
 > A demo of https://github.com/ArkEcosystem/pay using React & Tailwind CSS
 
+> You can access it at https://arkecosystem.github.io/pay-demo-react/
+
 ## Credits
 
 - [Brian Faust](https://github.com/faustbrian)
