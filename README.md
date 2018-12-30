@@ -1,4 +1,4 @@
-# ARK Pay
+# Ark Pay - React Demo
 
 <p align="center">
     <img src="https://github.com/ArkEcosystem/pay-demo/raw/master/banner.png" />
@@ -11,7 +11,7 @@
 ## Credits
 
 - [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../../../contributors)
+- [All Contributors](../../contributors)
 
 ## License
 
