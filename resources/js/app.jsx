@@ -110,7 +110,7 @@ class App extends React.Component {
         return
       }
 
-      var timeLeft = this.state.timeLeft - 1
+      const timeLeft = this.state.timeLeft - 1
 
       this.setState(timeLeft => ({
         timeLeft: timeLeft,
