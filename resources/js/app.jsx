@@ -61,16 +61,20 @@ class App extends React.Component {
       .coin("ARK")
       .network("devnet");
 
-    gateway.on("started", data => {
-      this.state.amountCrypto = data.transfer.amounts.crypto;
-    });
+    gateway.on("started", data =>
+      this.setState(state => {
+        state.amountCrypto = data.transfer.amounts.crypto;
+        return state;
+      })
+    );
 
-    gateway.on("completed", data => {
-      this.state.hasPaid = true;
-      this.state.product = sample(this.state.products);
-
-      this.forceUpdate();
-    });
+    gateway.on("completed", data =>
+      this.setState(state => {
+        state.hasPaid = true;
+        state.product = sample(this.state.products);
+        return state;
+      })
+    );
 
     gateway.peers([
       {
