@@ -68,6 +68,8 @@ class App extends React.Component {
     gateway.on("completed", data => {
       this.state.hasPaid = true;
       this.state.product = sample(this.state.products);
+
+      this.forceUpdate();
     });
 
     gateway.peers([
