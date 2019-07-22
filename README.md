@@ -6,13 +6,18 @@
 
 > A demo of https://github.com/ArkEcosystem/pay using React & Tailwind CSS
 
-> You can access it at https://arkecosystem.github.io/pay-demo-react/
+> Lead Maintainer: [Brian Faust](https://github.com/faustbrian)
+
+You can access it at https://arkecosystem.github.io/pay-demo-react/
+
+## Security
+
+If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
-- [Brian Faust](https://github.com/faustbrian)
-- [All Contributors](../../contributors)
+This project exists thanks to all the people who [contribute](../../contributors).
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [ARK Ecosystem](https://ark.io)
